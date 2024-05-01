@@ -1,0 +1,29 @@
+// MongoDB Playground
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// The current database to use.
+use('jaypigs');
+
+// Search for documents in the current collection.
+db.getCollection('nfts')
+  .find(
+    // {
+    //     "chainId": 43113
+    // },
+  )
+  .sort({
+    tokenId: -1
+  })
+
+/**
+db.getCollection('nfts')
+  .find(
+    {
+        "chainId": 80001,
+        tokenId: 158
+    },
+  )
+//   .sort({
+//     tokenId: -1
+//   });
+ */
